@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Audiowide', sans-serif;
+}
+
+body {
+    background: #0a0a2e;
+    background-image: 
+        linear-gradient(45deg, rgba(255, 0, 128, 0.15) 0%, transparent 70%),
+        linear-gradient(135deg, rgba(0, 255, 213, 0.15) 0%, transparent 70%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #00ffd5;
+    perspective: 1000px;
+}
+
+.container {
+    position: relative;
+    background: rgba(18, 4, 88, 0.5);
+    padding: 3rem;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 500px;
+    border: 2px solid rgba(24, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 30px rgba(24, 255, 255, 0.2);
+    z-index: 1;
+}
+
+.search-box {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 2.5rem;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 15px 20px;
+    background: rgba(18, 4, 88, 0.3);
+    border: 1px solid rgba(24, 255, 255, 0.3);
+    border-radius: 10px;
+    font-size: 1.1rem;
+    color: #00ffd5;
+    outline: none;
+}
+
+.search-box button {
+    padding: 15px 30px;
+    background: rgba(24, 255, 255, 0.1);
+    color: #00ffd5;
+    border: 1px solid rgba(24, 255, 255, 0.3);
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.search-box button:hover {
+    background: rgba(24, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.weather-info {
+    text-align: center;
+}
+
+.location h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(24, 255, 255, 0.5);
+}
+
+.weather-details {
+    margin: 2.5rem 0;
+    padding: 2rem;
+    background: rgba(18, 4, 88, 0.3);
+    border-radius: 15px;
+}
+
+.weather-details img {
+    width: 120px;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(0 0 8px rgba(24, 255, 255, 0.5));
+}
+
+.weather-details h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 20px rgba(24, 255, 255, 0.5);
+}
+
+.additional-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.info-item {
+    padding: 1.5rem;
+    background: rgba(18, 4, 88, 0.3);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.info-item:hover {
+    transform: translateY(-5px);
+}
+
+.info-item span {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.info-item p {
+    font-size: 1.8rem;
+    margin-top: 10px;
+}
